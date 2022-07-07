@@ -13,6 +13,6 @@ public class MainActivity extends AppCompatActivity {
 
         getSupportActionBar().setTitle("Fragment Lifecycle");
 
-        getSupportFragmentManager().beginTransaction().add(R.id.fragment_container, new FragmentA()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new FragmentA()).commit();
     }
 }
